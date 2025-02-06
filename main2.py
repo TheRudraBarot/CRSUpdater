@@ -9,7 +9,7 @@ chrome_options.add_argument("--headless")
 chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--disable-dev-shm-usage")
 
-service = Service("/usr/bin/chromedriver")  # Adjust path if necessary
+service = Service("/root/updater/chromedriver-linux64/chromedriver")  # Adjust path if necessary
 driver = webdriver.Chrome(service=service, options=chrome_options)
 
 URL = "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations.html"
